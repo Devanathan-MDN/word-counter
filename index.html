@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word-counter</title>
+    <link rel="stylesheet" href="style.css">
+    <!--typing  js link-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+</head>
+<body>
+    <h1>Counter</h1>
+    <p><span class="typedText"></span></p>
+            
+    <div class="container">
+        <textarea name="text" class="text" id="text" placeholder="Enter your text here......" oninput="upCount()" autofocus  cols="20" rows="5"></textarea>
+        <p class="count">
+            <span id="wcount">0</span> Words <span>|</span>
+            <span id="ccount">0</span> Letters <span>|</span>
+            <span id="scount">0</span> Sentence 
+        </p>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
